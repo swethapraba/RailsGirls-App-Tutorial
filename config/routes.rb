@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  root 'foods#index'
+  get 'pages/about'
+
+  root to: redirect('/foods')#('/ideas')
+  #root 'foods#index'
   resources :foods
   resources :ideas
   # The priority is based upon order of creation: first created -> highest priority.
