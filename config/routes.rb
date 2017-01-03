@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   get 'pages/about'
-
-  root to: redirect('/foods')#('/ideas')
-  #root 'foods#index'
+  root to: redirect('/foods')#('/ideas') #this is the configuration thing to override default ruby homepage
   resources :foods
   resources :ideas
   # The priority is based upon order of creation: first created -> highest priority.
