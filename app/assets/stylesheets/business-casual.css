@@ -6,7 +6,8 @@
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../images/bg.jpg') no-repeat center center fixed;
+    /**/background-color: #CCCCFF;/**/
+    /**background: url('../images/bg.jpg') no-repeat center center fixed;**/
     /**background: url('../img/bg.jpg') no-repeat center center fixed; /** this is from the original business-casual file** **/
     -webkit-background-size: cover;
     -moz-background-size: cover;
