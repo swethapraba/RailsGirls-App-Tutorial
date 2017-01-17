@@ -1,0 +1,1 @@
+json.array! @serviceorgs, partial: 'serviceorgs/serviceorg', as: :serviceorg

@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Service Organizations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name  </th>
+      <th>Address  </th>
+      <th>Website  </th>
+      <th>Phone  </th>
+      <th>Nonperishables</th>  
+      <th>Fresh</th>
+      <th>Refridgerated</th>
+      <th>Frozen</th>
+      <th>Cooked</th>
+      <th>Hours</th>
+      <th>Other Information</th>
+      <th colspan="15"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @serviceorgs.each do |serviceorg| %>
+      <tr>
+        <td><%= serviceorg.name %></td>  
+        <td><%= serviceorg.address %></td>  
+        <td><%= serviceorg.website %></td>  
+        <td><%= serviceorg.phone %></td>  
+        <td><%= serviceorg.nonperishables %></td>  
+        <td><%= serviceorg.fresh %></td>  
+        <td><%= serviceorg.refridgerated %></td>  
+        <td><%= serviceorg.frozen %></td>  
+        <td><%= serviceorg.cooked %></td>  
+        <td><%= serviceorg.hours %></td>  
+        <td><%= serviceorg.otherInfo %></td>  
+        <td><%= link_to 'Show', serviceorg %></td>  
+        <td><%= link_to 'Edit', edit_serviceorg_path(serviceorg) %></td>  
+        <td><%= link_to 'Destroy', serviceorg, method: :delete, data: { confirm: 'Are you sure? This action cannot be undone' } %></td> 
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Add New Service Organization', new_serviceorg_path %>

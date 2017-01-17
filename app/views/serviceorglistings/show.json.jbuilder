@@ -1,0 +1,1 @@
+json.partial! "serviceorglistings/serviceorglisting", serviceorglisting: @serviceorglisting

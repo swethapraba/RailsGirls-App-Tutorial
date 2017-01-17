@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @serviceorglisting.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @serviceorglisting.address %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @serviceorglisting.website %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @serviceorglisting.phone %>
+</p>
+
+<p>
+  <strong>Nonperishables:</strong>
+  <%= @serviceorglisting.nonperishables %>
+</p>
+
+<p>
+  <strong>Freshfoods:</strong>
+  <%= @serviceorglisting.freshFoods %>
+</p>
+
+<p>
+  <strong>Refridgeratedfoods:</strong>
+  <%= @serviceorglisting.refridgeratedFoods %>
+</p>
+
+<p>
+  <strong>Frozenfoods:</strong>
+  <%= @serviceorglisting.frozenFoods %>
+</p>
+
+<p>
+  <strong>Cookedfoods:</strong>
+  <%= @serviceorglisting.cookedFoods %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @serviceorglisting.hours %>
+</p>
+
+<p>
+  <strong>Otherinformation:</strong>
+  <%= @serviceorglisting.otherInformation %>
+</p>
+
+<%= link_to 'Edit', edit_serviceorglisting_path(@serviceorglisting) %> |
+<%= link_to 'Back', serviceorglistings_path %>

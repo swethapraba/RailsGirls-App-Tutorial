@@ -1,0 +1,2 @@
+json.extract! serviceorglisting, :id, :name, :address, :website, :phone, :nonperishables, :freshFoods, :refridgeratedFoods, :frozenFoods, :cookedFoods, :hours, :otherInformation, :created_at, :updated_at
+json.url serviceorglisting_url(serviceorglisting, format: :json)

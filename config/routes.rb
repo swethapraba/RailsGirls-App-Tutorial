@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  resources :serviceorglistings
+  resources :serviceorgs
   get 'pages/about'
-  root to: redirect('/foods')#('/ideas') #this is the configuration thing to override default ruby homepage
+  root to: redirect('/serviceorgs')
+  resources :serviceorgs
+  #root to: redirect('/foods')#('/ideas') #this is the configuration thing to override default ruby homepage
   resources :foods
   resources :ideas
   # The priority is based upon order of creation: first created -> highest priority.

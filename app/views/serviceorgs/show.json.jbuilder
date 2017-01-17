@@ -1,0 +1,1 @@
+json.partial! "serviceorgs/serviceorg", serviceorg: @serviceorg

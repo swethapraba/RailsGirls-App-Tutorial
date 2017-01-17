@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Service Organizations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Website</th>
+      <th>Phone</th>
+      <th>Nonperishables</th>
+      <th>Freshfoods</th>
+      <th>Refridgeratedfoods</th>
+      <th>Frozenfoods</th>
+      <th>Cookedfoods</th>
+      <th>Hours</th>
+      <th>Otherinformation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @serviceorglistings.each do |serviceorglisting| %>
+      <tr>
+        <td><%= serviceorglisting.name %></td>
+        <td><%= serviceorglisting.address %></td>
+        <td><%= serviceorglisting.website %></td>
+        <td><%= serviceorglisting.phone %></td>
+        <td><%= serviceorglisting.nonperishables %></td>
+        <td><%= serviceorglisting.freshFoods %></td>
+        <td><%= serviceorglisting.refridgeratedFoods %></td>
+        <td><%= serviceorglisting.frozenFoods %></td>
+        <td><%= serviceorglisting.cookedFoods %></td>
+        <td><%= serviceorglisting.hours %></td>
+        <td><%= serviceorglisting.otherInformation %></td>
+        <td><%= link_to 'Show', serviceorglisting %></td>
+        <td><%= link_to 'Edit', edit_serviceorglisting_path(serviceorglisting) %></td>
+        <td><%= link_to 'Destroy', serviceorglisting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Serviceorglisting', new_serviceorglisting_path %>

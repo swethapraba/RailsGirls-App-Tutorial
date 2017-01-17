@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  address: MyText
+  website: MyString
+  phone: MyString
+  nonperishables: false
+  fresh: false
+  refridgerated: false
+  frozen: false
+  cooked: false
+  hours: MyText
+  otherInfo: MyText
+
+two:
+  name: MyString
+  address: MyText
+  website: MyString
+  phone: MyString
+  nonperishables: false
+  fresh: false
+  refridgerated: false
+  frozen: false
+  cooked: false
+  hours: MyText
+  otherInfo: MyText

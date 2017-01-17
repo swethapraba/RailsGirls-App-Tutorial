@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161208200147) do
+ActiveRecord::Schema.define(version: 20170117170739) do
 
   create_table "foods", force: :cascade do |t|
     t.string   "item"
@@ -28,6 +28,38 @@ ActiveRecord::Schema.define(version: 20161208200147) do
     t.string   "picture"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "serviceorglistings", force: :cascade do |t|
+    t.string   "name"
+    t.text     "address"
+    t.string   "website"
+    t.string   "phone"
+    t.boolean  "nonperishables"
+    t.boolean  "freshFoods"
+    t.boolean  "refridgeratedFoods"
+    t.boolean  "frozenFoods"
+    t.boolean  "cookedFoods"
+    t.text     "hours"
+    t.text     "otherInformation"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
+  create_table "serviceorgs", force: :cascade do |t|
+    t.string   "name"
+    t.text     "address"
+    t.string   "website"
+    t.string   "phone"
+    t.boolean  "nonperishables"
+    t.boolean  "fresh"
+    t.boolean  "refridgerated"
+    t.boolean  "frozen"
+    t.boolean  "cooked"
+    t.text     "hours"
+    t.text     "otherInfo"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
 end
