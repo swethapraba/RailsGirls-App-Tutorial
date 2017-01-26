@@ -1,7 +1,7 @@
 <%= form_for(@serviceorglisting) do |f| %>
   <% if @serviceorglisting.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@serviceorglisting.errors.count, "error") %> prohibited this serviceorglisting from being saved:</h2>
+      <h2><%= pluralize(@serviceorglisting.errors.count, "error") %> prohibited this Service Organization from being saved:</h2>
 
       <ul>
       <% @serviceorglisting.errors.full_messages.each do |message| %>
@@ -11,48 +11,48 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
+  <div class="field"> Organization Name
+    <!--<%= f.label :name %>--><br>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :address %><br>
+  <div class="field"> Organization Address
+    <!--<%= f.label :address %>--><br>
     <%= f.text_area :address %>
   </div>
-  <div class="field">
-    <%= f.label :website %><br>
+  <div class="field"> Website
+    <!--<%= f.label :website %>--><br>
     <%= f.text_field :website %>
   </div>
-  <div class="field">
-    <%= f.label :phone %><br>
+  <div class="field"> Phone Number
+    <!--<%= f.label :phone %>--><br>
     <%= f.text_field :phone %>
   </div>
-  <div class="field">
-    <%= f.label :nonperishables %><br>
+  <div class="field"> Accepts Nonperishables?
+    <!--<%= f.label :nonperishables %><br>-->
     <%= f.check_box :nonperishables %>
   </div>
-  <div class="field">
-    <%= f.label :freshFoods %><br>
+  <div class="field"> Accepts Fresh Foods?
+    <!--<%= f.label :freshFoods %><br>-->
     <%= f.check_box :freshFoods %>
   </div>
-  <div class="field">
-    <%= f.label :refridgeratedFoods %><br>
+  <div class="field"> Accepts Refridgerated Foods?
+    <!--<%= f.label :refridgeratedFoods %><br>-->
     <%= f.check_box :refridgeratedFoods %>
   </div>
-  <div class="field">
-    <%= f.label :frozenFoods %><br>
+  <div class="field"> Accepts Frozen Foods?
+    <!--<%= f.label :frozenFoods %><br>-->
     <%= f.check_box :frozenFoods %>
   </div>
-  <div class="field">
-    <%= f.label :cookedFoods %><br>
+  <div class="field"> Accepts Cooked Foods?
+    <!--<%= f.label :cookedFoods %><br>-->
     <%= f.check_box :cookedFoods %>
   </div>
-  <div class="field">
-    <%= f.label :hours %><br>
+  <div class="field"> What are the hours of operation?
+    <!--<%= f.label :hours %>--><br>
     <%= f.text_area :hours %>
   </div>
-  <div class="field">
-    <%= f.label :otherInformation %><br>
+  <div class="field"> Any other important information?
+    <!--<%= f.label :otherInformation %>--><br>
     <%= f.text_area :otherInformation %>
   </div>
   <div class="actions">
