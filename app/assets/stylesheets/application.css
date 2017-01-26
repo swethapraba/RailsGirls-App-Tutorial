@@ -12,15 +12,13 @@
  */
 body 
 { 
-	padding-top: 60px; 
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    /**/background-color: #CCCCFF;/**/
-    /**background: url('../images/bg.jpg') no-repeat center center fixed;/**/
-    /**background: url('../img/bg.jpg') no-repeat center center fixed; /** this is from the original business-casual file** **/
+    background-color: #CCCCFF;
+    /**background: url('../img/bg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover;**/
 }
 h1,
 h2,
@@ -191,11 +189,22 @@ footer p {
         font-size: 1.25em;
     }
 }
-
 @media screen and (min-width:1200px) {
     .box:after {
         content: '';
         display: table;
         clear: both;
     }
+}
+
+/**My CSS Additions to Business Casual**/
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+padding: 10px;
+}
+th {
+  text-align: center;
 }

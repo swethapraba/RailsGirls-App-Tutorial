@@ -1,4 +1,4 @@
-<style>
+<!--<style>
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -9,7 +9,7 @@ padding: 15px;
 th {
   text-align: center;
 }
-</style>
+</style>-->
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Service Organizations</h1>
@@ -46,7 +46,7 @@ th {
         <td><%= serviceorglisting.cookedFoods %></td>
         <td><%= serviceorglisting.hours %></td>
         <td><%= serviceorglisting.otherInformation %></td>
-        <td><%= link_to 'Show', serviceorglisting %></td>
+        <td><%= link_to 'Show', serviceorglisting %><!--</td>-->
         <td><%= link_to 'Edit', edit_serviceorglisting_path(serviceorglisting) %></td>
         <td><%= link_to 'Destroy', serviceorglisting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -57,6 +57,3 @@ th {
 <br>
 
 <%= link_to 'Add New Service Organization', new_serviceorglisting_path %>
-
-
-
