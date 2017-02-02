@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :serviceorglistings
   resources :serviceorgs
   get 'pages/about'
-  root to: redirect('/serviceorgs')
+  root to: redirect('/serviceorglistings')
   resources :serviceorgs
   #root to: redirect('/foods')#('/ideas') #this is the configuration thing to override default ruby homepage
   resources :foods
