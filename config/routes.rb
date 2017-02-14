@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'greetings/hello'
+
   resources :serviceorglistings
   resources :serviceorgs
   get 'pages/about'
