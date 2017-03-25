@@ -1,6 +1,5 @@
 == This project is a small tutorial app I built to learn how to build Rails apps!
 == Tutorial comes from Rails Girls
-
 == README
 
 This README would normally document whatever steps are necessary to get the
